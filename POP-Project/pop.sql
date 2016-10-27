@@ -70,7 +70,9 @@ CREATE TABLE IF NOT EXISTS `pop` (
   `werk_tijdsduur` int(2) unsigned DEFAULT NULL COMMENT 'Tijdsduur in uren (gehele uren)',
   `vrienden` varchar(255) DEFAULT NULL,
   `huiswerktijd` int(2) unsigned DEFAULT NULL COMMENT 'Tijdsduur huiswerk per week',
+  `medische informatie` varchar(255) DEFAULT NULL,	
   `vorig_schooljaar` varchar(255) DEFAULT NULL COMMENT 'Beschrijf in drie zinnen hoe vorig schooljaar is verlopen',
+  `cognitief` varchar(255) DEFAULT NULL COMMENT 'In welke vakken ben je goed? En in welkevakken ben je minder goed',
   `notities` text COMMENT 'Notitie van de mentor bij een vragenlijst',
   PRIMARY KEY (`pop_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
